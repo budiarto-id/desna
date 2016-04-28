@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+
+        <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <title>Kelistrikan Dasar Otomotif</title>
+    </head>
+    <body>
+		
+        <div id="app">
+						 <div id="Welcome-page" data-role="page" style="background-image:  url('img/Icon%20Materi/background%20project%20tanpa%20background.png'), url('img/Icon%20Materi/steelbackground3.jpg');background-position: center center, top left;background-size: 100%,100% 100%;background-repeat: no-repeat;"> 
+						    <a href="#home-page" data-theme="d"  data-role="button" data-inline="true" style="margin-top: 100%;margin-left: 30%;">Masuk</a>
+						 </div>
+				    
+            <div id="home-page" data-role="page">
+						<img src="img/Icon%20Materi/background%20menu.png"  style="width:100%" >
+                <div data-role="content" >
+								
+								
+                    
+										
+                    <div id="menu">
+												 <ul data-role="listview">
+																<li data-theme="c" style="background-color:#3399cc">
+																		<a  href="#Materi-page"  >
+																			 <img src="img/Icon%20Materi/3%20Materi.png" alt="">
+																			 <h2><b>MATERI</b></h2>
+																		</a>
+																</li>
+																<li data-theme="c" style="background-color:#66ff99">
+																		<a  href="#evaluasi-page" onclick="resetSoal()">
+																			 <img src="img/Icon%20Materi/2%20evaluasi.png" alt="">
+																			 <h2><b>EVALUASI</b></h2>
+																		</a>
+																</li>	
+																<li data-theme="c" style="background-color:#9966ff">
+																		<a  href="#silabus-page"  >
+																			 <img src="img/Icon%20Materi/1%20Silabus%20(1).png" alt="">
+																			 <h2><b>SILABUS</b></h2>
+																		</a>
+																</li>
+																<li data-theme="c" style="background-color:#ff3399">
+																		<a  href="#about-page"  >
+																			 <img src="img/Icon%20Materi/4%20profil.png"  alt="">
+																			 <h2><b>PROFIL</b></h2>
+																		</a>
+																</li>
+																<li data-theme="c" style="background-color:#ff9933">
+																		<a  href="#help-page"  >
+																			 <img src="img/Icon%20Materi/5%20help.png" alt="">
+																			 <h2><b>BANTUAN</b></h2>
+																		</a>
+																</li>
+																<li data-theme="c" style="background-color:#ff3333">
+																		<a  href="#" onclick="navigator.app.exitApp()">
+																			 <img src="img/Icon%20Materi/6%20exit.png" alt="">
+																			 <h2><b>EXIT</b></h2>
+																		</a>
+																</li>
+													</ul>				
+                                                
+                        
+                    </div>
+                </div>
+            </div><!-- /page  -->
+
+            <div  id="Materi-page" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <h1>Materi</h1>
+                </div>
+								<img src="img/Icon%20Materi/Electrical-System.jpg" style="width:100%">
+                <div data-role="content" align="center">
+                    <!-- Isi konten di sini -->
+										
+										<div id="menu" style=" font-size: 12px; vertical-align: center;">
+                        
+                            <ul data-role="listview">
+																<li data-theme="a" style="background-color:#0000ff"">
+																		<a  href="#materi1"  >
+																			 <img src="img/Icon%20Materi/dasar%20listrk.png" alt="">
+																			 <h2><b>Materi 1</b></h2>
+																			 <p>Pengertian dasar listrik</p>
+																		</a>
+                            		</li>	
+																<li data-theme="a" style="background-color: #3366ff">											
+																		<a  href="#materi2"    >
+																			 <img src="img/Icon%20Materi/hukum%20ohm.png" alt="">
+																			 <h2>Materi 2</h2>
+																			 <p>Hukum Ohm</p>
+																		</a>
+                            		</li>	
+																<li data-theme="a" style="background-color: #3399ff";>
+                                    <a  href="#materi3"  >
+																			 <img src="img/Icon%20Materi/kirchoff.png" alt="">
+																			 <h2>Materi 3</h2>
+																			 <p>Hukum Kirchoff</p>
+																		</a>
+                            		</li>	
+																<li data-theme="a" style="background-color:#6699ff";>
+                                    <a  href="#materi4"   >
+																			 <img src="img/Icon%20Materi/analisis%20rangkaian.png" alt="">
+																			 <h2>Materi 4</h2>
+																			 <p>Rangkaian Seri, Paralel, dan Kombinasi</p>
+																		</a>
+                            		</li>	
+														</ul>                       
+                        
+											</div>
+
+                </div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>
+
+						<div  id="materi1" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">Materi 1</h1>
+                </div>
+                <div data-role="content" align="justify" style="font-size: 16px;">
+                    <!-- Isi konten di sini -->
+    										<h2> BESARAN LISTRIK</h2>
+    										<p>Pada materi besaran listrik akan dijelaskan beberapa materi tentang dasar-dasar kelistrikan.</p>
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">
+												<h3><b>I. Komposisi dari Benda-Benda</b></h3>
+    										<div class="centerText">
+    										<img src="img/materi1-a-substance.PNG" alt="subtance atom">
+    										</div>
+    										<p>Suatu benda bila kita bagi, kita akan mendapatkan suatu partikel yang disebut molekul dan bila kita bagi lagi akan mendapatkan beberapa atom.
+    										Semua atom terdiri dari inti yang dikelilingi oleh partikel-partikel tipis yang biasa disebut <strong>dengan electron</strong>.
+    										Inti terdiri dari proton dan neutron dalam jumlah yang sama, kecuali atom hydrogen yang kekurangan neutron.</p>
+    										
+    										<p>Istilah atom berasal dari Bahasa Yunani(Atomos), yang berarti tidak dapat dipotong ataupun sesuatu yang tidak dapat dibagi-bagi lagi. 
+    										Konsep atom sebagai komponen yang tak dapat dibagi-bagi lagi pertama kali diajukan oleh para filsuf India dan Yunani. 
+    										Pada abad ke-17 dan ke-18, para kimiawan meletakkan dasar-dasar pemikiran ini dengan menunjukkan bahwa zat-zat tertentu tidak dapat 
+    										dibagi-bagi lebih jauh lagi menggunakan metode-metode kimia. Selama akhir abad ke-19 dan awal abad ke-20, para fisikawan berhasil 
+    										menemukan struktur dan komponen-komponen subatom di dalam atom, membuktikan bahwa 'atom' tidaklah tak dapat dibagi-bagi lagi. 
+    										Prinsip-prinsip mekanika kuantum yang digunakan para fisikawan kemudian berhasil memodelkan atom.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-a2-atom.jpg" alt="atom" width="300" height="150">
+    										</div>
+    										<p><b>Proton</b> adalah atom yang bermuatan positif yang berada di inti atom</p>
+    										<p><b>Elektron</b> adalah atom yang bermuatan negatif yang mengelilingi inti atom</p>
+    										<p><b>Neutron</b> adalah atom yang tidak memiliki muatan apapun</p>
+    										<p><b>Nucleus</b> adalah inti atom.</p>
+    										
+    										<p>Proton dan electron mempunyai suatu hal yang sama yaitu <b>muatan listrik</b> (electrical charge). 
+    										Berikut contoh muatan proton dan elekton pada Copper (tembaga) dan Hydrogen (air).</p>
+    										<div class="centerText">
+    										<img src="img/materi1-c-atom%20air%20dan%20tembaga.PNG" alt="atom hydrogen dan copper" width="300" height="120">
+    										</div>
+										</div>	
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">	
+    										<h3><b>II. Elektron Bebas</b></h3>
+    										<p>Elektron-elektron yang orbitnya paling jauh disebut <b>elektron valensi</b>. 
+    										Karena electron yang mempunyai orbit paling jauh dari inti gaya tariknya lemah, 
+    										maka electron ini cenderung akan berpindah ke atom lain. Tembaga, perak atau logam lainnya, 
+    										valensi elektronnya akan bergerak hampir bebas terhadap intinya, dengan demikian electron 
+    										disebut <b>electron bebas</b>.
+										</div>		
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">		
+    										<h3><b>III. Tipe LIstrik dan Sifatnya</b></h3>
+    										<div class="centerText">
+    										<img src="img/materi1-d-listrik%20statis.PNG" alt="Listrik statis">
+    										</div>
+    										<p>Ada dua tipe listrik yaitu: Listrik statis dan listrik dinamis. Listrik dinamis 
+    										dibagi menjadi arus searah <b>(DC/Direct current)</b> dan arus bolak - balik <b>(AC/Alternating Current)</b>. 
+    										<h5><b>a. Listrk Statis</b></h5>
+    										<p>Bila sebatang kaca (glass rod) digosok dengan kain sutera, glass rod dan sutera menjadi bermuatan listrik, satu bermuatan positif dan satu lagi bermuatan negative.</p>
+    										<p>Tanpa menyentuh kedua benda tersebut dan menghubungkan dengan konduktor, muatan listrik tetap berada pada batang kaca dan kain sutera. Karena tidak terjadi gerakan maka tipe kelistrikan ini disebut listrik statis.</p>
+    										<p>Dalam rumus electron bebas, listrik statis adalah suatu keadaan dimana electron bebas sudah terpisah dari atomnya masing-masing, tetapi tidak bergerak dan hanya berkumpul diatas permukaan benda.</p>
+    										<h5><b>b. Listrik DInamis</b></h5>
+    										<div class="centerText">
+    										<img src="img/materi1-e-listrik%20dinamis.PNG" alt="listrik dinamis">
+    										</div>
+    										<p>Listrik dinamis adalah suatu keadaan dimana terjadinya pergerakkan dari electron -elektron bebas melalui suatu konduktor.</p>
+    										<p>Listrik arus searah (DC) adalah bila electron-elektron bebas melalui suatu konduktor.</p>
+    										<p>Listrik arus bolak balik (AC) adalah bile electron-elektron bebas bergerak dengan arah yang bervariasi.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-f-listrik%20dinamis2.PNG" alt="listrik dinamis2" width="300" height="120">
+    										</div>
+										</div>	
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">	
+    										<h3><b>IV. Arus Listrik</b></h3>
+    										<h5><b>a. Arus Listrik</b></h5>
+    										<div class="centerText">
+    										<img src="img/materi1-g-arus%20listrik.PNG" alt="a.ArusListrik">
+    										</div>
+    										<p>Bila kita menghubungkan battery dan lampu dengan kabel tembaga, maka lampu akan menyala. Arus listrik mengalir dari 
+    										positif ke negative, tetapi electron mengalir dari negative ke positif.</p>
+    										<h5><b>b.Satuan Pengukuran Arus Listrik</b></h5>
+    										<p>Besar Arus listrik yang mengalir melalui konduktor adalah sama dengan jumlah electron bebas yang melewati penampang konduktor setiap detik. 
+    										Arus listrik dinyatakan dengan I (insensity) sedangkan besar arus listrik dinyatakan dengan satuan ampere (A).</p>
+    										<p>Satu ampere sama dengan 6,25 x 1018 elektron bebas (1 coloumb) yang melewati konduktor tiap detik atau dirumuskan coloumb/detik.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-h-table%20arus%20listrik.PNG" alt="table arus">
+    										</div>
+    										<h5>c.	Kejadian-Kejadian yang disebabkan Oleh Arus LIstrik</h5>
+    										<p>Bila arus mengalir pada konduktor atau elektrolit akan menyebabkan tiga kejadian:</p>
+    										<p>1)Pembangkit panas, contohnya: headlight, cigarette lighter,dll.</p>
+    										<p>2)Aksi kimia terjadi pada elektrolit battery yang memungkinkan arus dapat mengalir</p>
+    										<p>3)Pembangkitan medan magnet, bila arus listrik mengalir pada kumparan(relay, solenoid,dll)</p>
+										</div>
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">		
+    										<h3><b>V. Tegangan Listrik</b></h3>
+    										<h5><b>a. Uraian</b></h5>
+    										<p>Bila dua buah tangki air yang berbeda tingginya dihubungkan oleh pipa, air akan mengalir dari tangki yang lebih tinggi ke tangki yang lebih rendah. 
+    										Hal ini disebabkan oleh adanya head (perbedaan tinggi) sehingga terjadi perbedaan tekanan (beda potensial).</p>
+    										<p>Hal yang sama juga terjadi, bila bila lampu dihubungkan dengan battery oleh kabel.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-i-a.%20uraian%20tegangan%20listrik.PNG" alt="bejana dan pipa">
+    										<img src="img/materi1-j-a.%20uraian%20tegangan%20listrik2.PNG" alt="rangkaian listrik">
+    										</div>
+    										<p>Hal ini disebabkan oleh adanya potensial tinggi pada terminal positif dan potensial rendah pada terminal negative battery 
+    										(beda potensial), dan tegangan listrik menyebabkan arus listrik akan mengalir dan lampu menyala. Tegangan listrik ini disebut dengan voltage.</p>
+    										<h5><b>b. Satuan Pengukuran Tegangan Listrik</b></h5>
+    										<p>Satuan tegangan listrik dinyatakan dengan volt (V)<br>
+    										Satu volt adalah tegangan listrik yang dapat mengalirkan arus sebesar 1 ampere pada konduktor dengan tahanan 1 &Omega;
+    										<div class="centerText">
+    										<img src="img/materi1-k-%20table%20tegangan.PNG" alt="table tegangan">
+    										</div>
+										</div>
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">		
+    										<h3><b>VI. Tahanan Listrik</b></h3>
+    										<h5><b>a. Konduktor, Semi Konduktor, dan Isolator</b></h5>
+    										<p>Dalam hal tahanan terhadap aliran listrik, maka benda-benda digolongkan ke dalam tiga kategori.<br>
+    										<b>1)Konduktor</b><br>
+    										Konduktor adalah material (benda-benda) yang dapat dialiri arus dengan mudah (emas, perak, tembaga, logam).<br>
+    										<b>2)Semi Konduktor</b><br>
+    										Semi Konduktor adalah material dimana arus listrik dapat mengalir tetapi tidak semudah konduktor (silikon, germanium).<br>
+    										<b>3)Isolator</b><br>
+    										Isolator adalah material yang tidak dapat dialiri arus sama sekali (karet, kaca, plastic,dll)</p>
+    										<h5><b>b. Tahanan Listrik</b></h5>
+    										<div class="centerText">
+    										<img src="img/materi1-l-hambatan%20listrik.png" width="200" height="200">
+    										</div>
+    										<p>Tahanan listrik(hambatan listrik) adalah sesuatu yang dapat mengurangi arus listrik. Arus listrik yang mengalir melalui 
+    										konduktor akan mendapatkan hambatan atau tahanan dari kawat penghantar (konduktor) itu sendiri.  Besarnya hambatan listrik diukur 
+    										dengan satuan Ohm.</p>
+    										<h5><b>c.	Satuan Pengukuran Tahanan Listrik</b></h5>
+    										<p>Tahanan listrik dinyatakan dengan resistance (R) dan satuan ohm (&Omega;).
+    										<b>Satu ohm</b> adalah tahanan yang mampu menahan arus yang mengalir sebesar 1 A dengan tegangan 1 Volt.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-m-table%20hambatan%20listrik.png" alt="table hambatan listik">
+    										</div>
+    										<h5><b>d.	Hubungan Antara Diameter dan Panjang Konduktor dengan Tahanan</b></h5>
+    										<p>Tangki-tangki dengan ketinggian sama tetapi dihubungkan oleh pipa -pipa dengan diameter berbeda. 
+    										Meskipun keteinggiannyab sama, tetapi air akan lebih mudah mengalir pada tangki-tangki yang dihubungkan dengan pipa yang lebih besar.</p>
+    										<p>Kejadian ini juga berlaku untuk arus listrik, dimana arus listrik (electron) lebih mudah mengalir pada kabel yang lebih besar.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-n-perumpamaan%20hambatan.png" alt="perumpamaan hambatan" width="300" height="130">
+    										<p>Bila arus listrik mengalir pada jarak yang jauh (kabel yang panjang), maka tahanan akan menjadi lebih besar</p>
+    										</div>
+    										<p>Kesimpulannya, tahanan listrik pada suatu konduktor akan berbanding lurus dengan panjang konduktor dan berbanding terbalik terhadap luas penampang konduktor.
+    										Atau singkatnya Semakin panjang kabel, maka tahanan semakin besar. Berbeda dengan luas penampang kabel, 
+    										semakin besar luas penampang kabel maka tahanan semakin kecil.
+    										</P>
+    										<div class="centerText">
+    										<img src="img/materi1-O-perumpamaan%20KABEL.png" alt="kabel hambatan">
+    										</div>
+    										<p>untuk membuktikan pernyataan di atas berikut adalah rumus yang bisa membuktikannya:</p>
+    										<div class="centerText">
+    										<img src="img/materi1-p-rumus%20tahanan.png" alt="rumus tahanan kabel">
+    										</div>
+    										<div class="centerText">
+    										<img src="img/materi1-Q-table%20spesifik%20bahan.png" alt="table spesifik bahan" width="300" height="80">
+    										</div>
+    										<h5><b>e. Hubungan Antara Temperature dan Tahanan Listrik </b></h5>
+    										<p>Tahanan listrik pada konduktor akan berubah-ubah dengan adanya perubahan temperature, biasanya tahanan akan naik bila temperature naik.</p>
+    										<p>Bila sebuah lampu dihubungkan dengan battery melalui kawat, dan kawat tersebut kemudian panaskan dengan api, maka lampu akan menjadi redup.</p>
+    										<div class="centerText">
+    										<img src="img/materi1-r-thermistor.png" alt="gambar hubungan temperature dan tahanan">
+    										</div>
+										</div>		
+										
+										
+                </div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#Materi-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>
+
+						<div  id="materi2" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">Materi 2</h1>
+                </div>
+                <div data-role="content" align="justify" style="font-size: 16px;">
+                    <!-- Isi konten di sini -->
+								
+								
+  							  <h2>Hukum OHM</h2>
+  								<p>Hubungan antara arus listrik (I), Tegangan (V), dan Hambatan/tahanan (R) pertama kali diteliti oleh ahli fisika dari Jerman bernama 
+  								George Simon Ohm (1789-1854). Hasil penelitiannya dikenal dengan nama Hukum Ohm. Hukum Ohm dalam bahasa Inggris disebut dengan 
+  								"Ohm's Laws" George Simon Ohm mempublikasikan Hukum Ohm tersebut pada paper yang berjudul "The Galvanic Circuit Investigated Mathematically"
+  								pada tahun 1827.</p>
+  								
+  								<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">
+  								<h3> Pengertian Hukum Ohm</h3>
+  								<p>Hukum Ohm menyatakan: Besarnya kuat Arus(I) yang malalui konduktor antara dua titik berbanding lurus dengan beda potensial atau tegangan (V) di dua titik tersebut,
+  								dan berbanding terbalik dengan hambatan atau resistansi(R) di antara mereka (asalkan suhu konduktor tetap).
+  								<p><b>Rumus matematis :</b></p>
+  								<div class="centerText">
+  								<img src="img/materi2-a-rumus%20hukum%20ohm.gif" alt="hukum ohm" style="width: 100%;">
+  								</div>
+  								<p>Gambar di atas menunjukan <b><u>Segitiga Ajaib</u></b> dari hukum Ohm.Berikut adalah penjabarannya:</p>
+  								<p>Keterangan:</p>
+  								<p>V= Voltage (tegangan atau beda potensial yang terdapat pada kedua penghantar, satuannya Volt(v))</p>
+  								<p>I= Current (Arus listrik yang mengalir pada suatu penghantar, satuannya Ampere (A))</p>
+  								<p>R=Resistance (Hambatan atau tahanan yang terdapat pada suatu penghantar, satuannya (R))</p>
+  								<p>Berikut merupakan contoh Rangkaian listrik searah penerapan dari hukum Ohm.</p>
+  								<img src="img/materi2-c-rangkaian%20searah.PNG" alt="rangkaian searah" style="width: 100%;">
+  								<h4>Fungsi hukum ohm:</h4>
+  								<p>1. Untuk memperkecil arus </p>
+  								<p>2. Untuk memperkecil tegangan</p>
+  								<p>3. Untuk memperoleh nilai resistansi yang di inginkan</p>
+  								<p>Hal yang perlu diingat dalam perhitungan rumus Hukum Ohm, satuan unit yang dipakai adalah Volt, Ampere dan Ohm</p>
+  								</div>
+  								
+  								<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">
+  								<h3><b>Menghitung Rangkaian Secara Otomotis</b></h3>
+  								
+  								<p>Berikut adalah contoh perhitungan hukum ohm secara otomatis, silakan masukkan angka pada kolom yang akan dirubah.</p>
+									<table summary="">
+                    <tr>
+										  <td style="width:60%"><img src="img/materi2-d-rangkaian%20searah2.PNG" style="width:100%"></td>
+										  <td>
+											  <a id="btnV" href="#popupV" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop">V = 12 V</a>
+											  <a id="btnI" href="#popupA" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop">I = 2 A</a>
+											  <a id="btnR" href="#popupR" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop">R = 3 &#937;</a>
+											</td>
+										</tr>
+                  </table>
+  								</div>
+  								<div data-role="popup" id="popupV" data-theme="f" data-dismissible="false" data-overlay-theme="a">
+									  <div data-role="header">
+									  	<h3>Nilai Tegangan</h3> 
+										</div>
+										<div data-role="content">
+										<input type="text" value="12" id="nilaiV"/>
+										<a href="#"  data-role="button" data-inline="true" onclick="hitungI()" data-rel="back">OK</a>
+										<a href="#"  data-role="button" data-inline="true" data-rel="back">Cancel</a>
+										</div>
+									</div>
+  								<div data-role="popup" id="popupA" data-theme="f" data-dismissible="false" data-overlay-theme="a">
+									  <div data-role="header">
+									  	<h3>Nilai Arus</h3> 
+										</div>
+										<div data-role="content">
+										<input type="text" value="2" id="nilaiI"/>
+										<a href="#"  data-role="button" data-inline="true" onclick="hitungR()" data-rel="back">OK</a>
+										<a href="#"  data-role="button" data-inline="true" data-rel="back">Cancel</a>
+										</div>
+									</div>
+  								<div data-role="popup" id="popupR" data-theme="f" data-dismissible="false" data-overlay-theme="a">
+									  <div data-role="header">
+									  	<h3>Nilai Hambatan</h3> 
+										</div>
+										<div data-role="content">
+										<input type="text" value="3" id="nilaiR"/>
+										<a href="#"  data-role="button" data-inline="true" onclick="hitungV()" data-rel="back">OK</a>
+										<a href="#"  data-role="button" data-inline="true" data-rel="back">Cancel</a>
+										</div>
+									</div>
+  								<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">
+  								<h3><b>Contoh Soal</b></h3>
+  								<p>1. Sebuah Rangkaian listrik searah searah dengan tegangan 20V, diberi beban sebesar 10 Ohm. Berapakah nilai Arus Listrik(I)?</p>
+  								<p>Jawab</p>
+  								<p>Masukkan nilai <b>Tegangan</b> yaitu 20V dan nilai <b>Resistansi</b> 10Ohm ke dalam rumus hukum Ohm seperti dibawah ini:</p>
+  								<p>I= V/R</p>
+  								<p>I= 20 / 10</p>
+  								<p>I= 20A
+  								<p>2. Sebuah lampu pijar dinyalakan dengan aki, setelah lampu menyala tegangan lampu terukur 15V, dan kuat arusnya 200mA. 
+  								Berapa besar hambatan lampu tersebut?</p>
+  								<p>Jawab</p>
+  								<p>Masukkan nilai tegangan yaitu 15V dan nilai arus 200mA(mili Ampere). karena nilai arus yang dibutuhkan dalam bentuk A(Ampere). Maka 200mA dikonversi menjadi A.
+  							  200/100= 2A.</p>
+  								<p>R= V/I</p>
+  								<p>R= 15 / 2 </p>
+  								<p>R= 7,5 &Omega;</p>
+                  </div>
+									
+								</div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#Materi-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>
+						<div  id="materi3" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">Materi 3</h1>
+                </div>
+                <div data-role="content" align="justify" style="font-size: 16px;">
+                    <!-- Isi konten di sini -->
+    								<h2>Hukum Kirchoff 1</h2>
+    								<p></p>
+    								<p>Hukum Kirchoff merupakan salah satu hukum dalam ilmu Elektronika yang berfungsi untuk menganalisis arus dan tegangan
+    								dalam rangkaian. Hukum Kirchoff pertama kali diperkenalkan oleh seorang ahli fisika Jerman yang bernama Gustav Robert 
+    								Kirchoff(1824-1887)pada tahun 1845. Hukum Kirchoff terdiri dari 2 bagian yaitu Hukum Kirchoff 1 dan Hukum Kirchoff 2.</p>
+    								
+    								<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">
+      								<h3>Pengertian Hukum Kirchoff 1</h3>
+      								<p>Hukum KIrchoff 1 merupakan hukum Kirchoff yang berkaitan dengan arah arus dalam menghadapi titik percabangan. Hukum
+      								Kirchoff 1 ini sering disebut juga dengan Hukum Arus Kirchoff atau Kirchoff's current Law (KCL)</p>
+      								<p><b>Bunyi hukum Kirchoff 1 adalah sebagai berikut:</b></p>
+      								<p>"Arus total yang masuk melalui suatu titik percabangan dalam suatu rangkaian listrik sama dengan arus total yang 
+      								keluar dari titik percabangan tersebut."</p>	
+      								<p><b>Arus Masuk = Arus Keluar</b></p>
+      								<p>Untuk lebih jelas mengenai bunyi Hukum Kirchoff 1, Silakan lihat rumus dan rangkaian sederhana di bawah ini:</p>
+      								<img src="img/materi2-e-Hukum%20Kirchoff%201%20.PNG" alt="" style="width: 100%;">
+      								<p>Berdasarkan gambar di atas , dapat dirumuskan bahwa:</p>
+      								<img src="img/materi2-f-Hukum%20Kirchoff%201%20.PNG" alt="" style="width: 100%;">
+      								<img src="img/materi2-g-Hukum%20Kirchoff%201%20.PNG" alt="" style="width: 100%;">
+      								<p>Berdasarkan Rangkaian di atas dapat dirumuskan bahwa:</p>
+      								<img src="img/materi2-h-Hukum%20Kirchoff%201%20.PNG" alt="" style="width: 100%;">
+      								
+      								<h3>Arus pada Percabangan Rangkaian Listrik</h3>
+      								<p>Berikut adalah contoh arus yang mengalir pada percabangan rangkaian listrik.</p>
+      								<img src="img/materi2-i-Hukum%20Kirchoff%201%20.PNG" alt="" style="width: 100%;">
+      								<p>Dari gambar rangkaian listrik di atas, besar arus dapat dihitung dengan menggunakan rumus di bawah ini.</p>
+      								<img src="img/materi2-j-Hukum%20Kirchoff%201%20.PNG" alt="" width="200" height="180">
+      								<p>Sehingga nilai arus total yang masuk l<sub>1</sub> adalah:</p>
+      								<img src="img/materi2-k-Hukum%20Kirchoff%201%20.PNG" alt="" width="140" height="100"><br>
+      								<p>*Penjelasan tentang rangkaian paralel akan dibahas lebih lanjut pada materi analisis rangkaian listrik.</p>
+      								<p><b>Total ARUS MASUK=Total ARUS KELUAR</b></p>
+      								
+      								<h2>Contoh Soal</h2>
+      								<p>Contoh Soal hukum Kirchoff 1</p>
+      								<img src="img/materi2-l-Hukum%20Kirchoff%201%20.PNG" style="width: 100%";>
+      								<p>Dari rangkaian di atas diketahui bahwa:</p>
+      								<p>l<sub>1</sub>= 9A</p>
+      								<p>l<sub>2</sub>= 5A</p>
+      								<p>l<sub>4</sub>= 18A</p>
+      								<p>Berapakah l<sub>3</sub> (arus yang mengalir pada AB)?</p>
+      								<p><b>Penyelesaian</b></p>
+      								<p>Dari gambar rangkaian yang diberikan di atas, belum diketahui apakah arus I<sub>3</sub> adalah arus masuk
+      								atau keluar. Oleh karena itu, kita perlu membuat asumsi awal, misalnya kita mengasumsikan arus pada I<sub>3</sub> adalah
+      								arus keluar.</p>
+      								<p>Jadi Arus yang masuk adalah :</p>
+      								<p>l<sub>2</sub> + l<sub>2</sub></p>
+      								<p>= 9A + 5A</p>
+      								<p>=14 A</p><br>
+      								<p>Sedangkan arus yang keluar adalah:</p>
+      								<p>l<sub>4</sub> = 18 A</p>
+      								<p>Sehingga</p>
+      								<p>l<sub>3</sub> = l masuk - l keluar = -4A</p>
+      								<p>Karena yang didapat adalah negatif, maka I<sub>3</sub> adalah <b>ARUS MASUK sebesar 4A.</b></p>
+                    </div>
+										<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-theme="b">
+											<h2>Hukum Kirchoff 2 (Kirchoff tegangan)</h2>
+      								<p>Hukum Kirchoff 2 merupakan hukum kirchoff yang digunakan untuk menganalisis tegangan (beda potensial)
+      								komponen-komponen elektronika pada suatu rangkaian tertutup. Hukum Kirchoff 2 ini juga dikenal dengan 
+      								sebutan Hukum Tegangan Kirchoff atau KIrchoff's Voltage Law(KVL).</p>
+      								<p>Bunyi Hukum Kirchoff 2 adalah sebagai berikut:</p>
+      								<p><i>"Total tegangan (beda potensial) pada suatu rangkaian tertutup adalah nol"</i></p>
+											<p>Secara matematis, hukum II Kirchoff dapat ditulis:</p>	
+											<div class="centerText">
+											<img src="img/materi3-a-Hukum%20Kirchoff%202%20.PNG" alt="" height="35" width="150">
+											</div>
+											<p>&Sigma;E  = Jumlah GGL sumber arus (V)</p>
+											<p>&Sigma;IR = Jumlah Penurunan Tegangan (V)</p>
+											<p>I = Arus Listrik (A)</p>
+											<p>R = Hambatan (&Omega;)</p>
+											<img src="img/materi3-b-Hukum%20Kirchoff%202%20.PNG" height="200" width="250">
+											<p><b>Langkah - Langkah Penyelesaian</b></p>
+											<p>Langkah-langkah umum penyelesaian analisis rangkaian dengan HUkum Kirchoff II adalah sebagai berikut:</p>
+											<p>1. Pilih rangkaian untuk masing-masing lintasan tertutup dengan arah tertentu. Pemilihan arah loop bebas,
+											tapi jika memungkinkan diusahakan searah dengan arah arus listrik.</p>
+											<img src="img/materi3-c-Hukum%20Kirchoff%202%20.PNG" alt="" style="width: 100%";>
+											<p>2. GGL bertanda positif jika kutub positifnya lebih dulu di jumpai loop dan sebaliknya GGL negatif jika kutub negatif 
+											lebih dulu di jumpai loop.</p>
+											<p>a. Kutub sumber tegangan yang lebih dahulu dijumpai adalah kutub positif, maka nilai E bertanda positif (+)</p>
+											<div class="centerText">
+											<img src="img/materi3-d-arah%20loop%20positif%20.PNG" alt="" height="60" width="250"> 
+											</div>
+											<p>b. Kutub sumber tegangan yang lebih dahulu dijumpai adalah kutub negatif, maka nilai E bertanda negatif (-)</p>
+											<div class="centerText">
+											<img src="img/materi3-e-arah%20loop%20negatif%20.PNG" alt="" height="60" width="250">
+											</div>
+											<p>3. Kuat arus bertanda positif jika searah dengan loop dan bertanda negatif jika berlawanan dengan loop.</p>
+											<p>a. Arah loop sama dengan arah arus, maka penurunan tegangan (IR) bertanda positif (+)</p>
+											<div class="centerText">
+											<img src="img/materi3-f-arah%20loop%20%20.PNG" alt="" height="60" width="250">
+											</div>
+											<p>b. Arah loop berlawanan dengan arah arus, maka penurunan tegangan (IR) bertanda negatif (-) </p>
+											<div class="centerText">
+											<img src="img/materi3-g-arah%20loop%20%20.PNG" alt="" height="60" width="250">
+											</div>
+											<p>Dari rangkaian ABCD diatas, kita dapat menuliskan rumus dasar sesuai dengan arus yaitu:</p>
+											<div align="center" style="font-size: 18px;">
+											<p>E= I1R1 + I2R2</p>
+											</div>
+											
+											<h3>Rangkaian dengan satu loop</h3>
+											<p>Pada rangkaian satu loop tertutup, arus listrik yang mengalir adalah sama.</p>
+											<img src="img/materi3-h-rangkaian%20satu%20loop%20tertutup1%20%20.PNG" style="width: 100%";>
+											<p>1. Menentukan arah loop dengan arah dari A-B-C-D-A</p> 
+											<img src="img/materi3-i-rangkaian%20satu%20loop%20tertutup2%20%20.PNG" style="width: 100%";>
+											<p>2. Dengan menerapkan hukum Kirchoff 2 (&Sigma;E+&Sigma;(IR) = 0) dan memperhatikan aturan yang disepakati tentang
+											tanda-tandanya sehingga diperoleh:</p>
+											<p>-E+I.R1+I.R2 -E+I.R3 = 0 atau</p>
+											<p>-E -E+ I (R1+R2+R3) = 0 atau</p>
+											<p>(E1+E2)/(R1+R2+R3)</p>
+											
+											<h3>Rangkaian dengan dua loop atau lebih</h3>
+											<p>Rangkaian yang memiliki dua loop atau lebih disebut juga rangkaian majemuk</p>
+											<img src="img/materi3-j-rangkaian%20dua%20loop%20tertutup1%20%20.PNG" alt="" style="width: 100%";>
+											<p>Langkah-langkah dalam penyelesaian rangkaian mejemuk ini adalah sebagai berikut:</p>
+											<p>1. Tetapkan loop beserta arah arus</p>
+											<img src="img/materi3-k-rangkaian%20dua%20loop%20tertutup2%20%20.PNG" alt="" style="width: 100%";>
+											<p>2. Tulislah persamaan-persamaan arus untuk tiap titik cabang dengan menggunakan Hukum Kirchoff 1 </p>
+											<p>Menurut hukum Kirchoff 1, besar arus pada rangkaian adalah:</p>
+											
+											<div align="center" style="font-size: 18px;">
+											<p><b>I1+I2=I3 </b></p>
+											</div>
+											
+											<p>3. Tetapkan arah arus pada tiap cabang sesuai dengna persamaan hukum Kirchoff 1.</p>
+											<img src="img/materi3-l-rangkaian%20dua%20loop%20tertutup3%20%20.PNG" style="width: 100%";>
+											<p>Langkah terakhir adalah menuliskan persamaan-persamaan untuk setiap loop dengan menggunakan persamaan hukum kirchoff 2</p>
+											<div align="center" style="font-size: 18px;">
+											<p>&Sigma;E+&Sigma;IR=0</p>
+											<p><b>Loop 1 (aefda)</b></p>
+											<p>&Sigma;E+&Sigma;IR = 0</p>
+											<p>E1+i1.R1+i3.R3=0</p>
+											<p><b>Loop 2 (befcd)</b></p>
+											<p>&Sigma;E+&Sigma;IR = 0</p>
+											<p>E2+i3.R3+i2.R2 = 0</p>
+											</div>
+											
+											<h3>Contoh Soal Hukum Kirchoff 2</h3>
+											
+											<p><b>1. Sebuah rangkaian seperti ditunjukkan pada gambar di bawah ini, tentukan:</b></p>
+											<p>a. Kuat arus pada masing-masing cabang </p>
+											<img src="img/materi3-m-soal%201%20%20.PNG" style="width: 100%";>
+											<p>Penyelesaian</p>
+											<p>Tentukan arah arus pada rangkaian, loop searah jarum jam.</p>
+											<img src="img/materi3-n-soal%201%20%20.PNG" style="width: 100%";>
+											<p>Apabila mengikuti arah loop maka diketahui: </p>
+											<p>&Sigma;E+&Sigma;IR = 0</p>
+											<p>(E2-E1)+(I.R) = 0</p>
+											<p>9-6 = -5I</p>
+											<p> I = 3/-5 = - 0,6A
+											
+											<p><b>2. Suatu rangkaian seperti ditunjukkan pada gambar di bawah, dengan hukum Kirchoff II hitunglah kuat arus
+											pada masing-masing cabang</b></p>
+											<img src="img/materi3-o-soal%202%20%20.PNG" style="width: 100%;">
+											<p>Penyelesaian:</p>
+											<p>Perhatikan langkah-langkah penyelesaian yang telah dijelaskan pada materi di atas, sperti:</p>
+											<p>1. Menentukan arah arus </p>
+											<p>2. Menentukan arah loop</p>
+											<p>3. Masukkan hukum Kirchoff arus </p>
+											<p>4. Masukkan hukum Kirchoff tegangan</p>
+											<p>5. Menyelesaiakan persamaan yang ada</p>
+											<img src="img/materi3-p-soal%202%20%20.PNG" style="width: 100%;">
+											<p><b>Loop 1</b></p>
+											<p>&Sigma;E + &Sigma;IR</p>
+											<p>-E + I1.R1 + I3.R3 = 0</p>
+											<p>-6 + 2I1 + 3I3 =0</p>
+											<p>2I1 + 3I3 = 6</p>
+											<p><b>Loop 2</b></p>
+											<p>&Sigma;E + &Sigma;IR</p>
+											<p>-E + I2.R2 + I3.R3 = 0</p>
+											<p>-6 + 5I2 + 3I3</p><br>
+											<p><b>Menghitung Kuat Arus pada tiap cabang</b></p>
+											<p>Seperti yang kita ketahui bahwa I1 + I2 = I3, maka kita rubah I3 pada 
+											hasil perhitungan loop diatas menjadi (I1+I2):</p>
+											<img src="img/materi3-q-soal%202%20%20.PNG" alt="" style="width: 100%;">
+											<img src="img/materi3-r-soal%202%20%20.PNG" alt="" height="250" width="241">
+											<p>untuk mencari I1 kita gunakan hasil pada Persamaan 1 dengan mengganti I2 dengan hasil di atas</p>
+											<p>5I1 + + 3I2 = 6 </p>
+											<p>5I1 + + 3.0,387 = 6 </p>
+											<p>5I1 + + 1,17 = 6 </p>
+											<p>5.I1 = 6 - 1,17</p>
+											<p>I1 = 4,8/5</p>
+											<p>I1 = 0,96 A</p>
+											<p>Jadi I3= I1+I2</p>
+											<p>I3 = 0,39 + 0,96</p>
+											<p>I3 = 1,35 Ampere</p>
+											
+										</div>
+										
+								</div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#Materi-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>
+						
+						<div  id="materi4" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">Materi 4</h1>
+                </div>
+                <div data-role="content" align="justify" style="font-size: 16px;">
+                    <!-- Isi konten di sini -->
+    								<h2>Rangkaian Seri, Paralel dan kombinasi(Seri-paralel)</h2>
+    								<div class="centerText">
+												 <img src="img/materi4-a-gambar%20awal.png" alt="" height="136" width="250">
+    								</div>
+										<p>Pada halaman ini kita akan membahas jenis-jenis rangkaian sekaligus menganalisisnya.</p>	
+										<p>Dalam mempelajari kelistrikan terdapat 3 macam rangkaian, yaitu Rangkaian Seri, Rangkaian Paralel, 
+										dan Rangkaian Kombinasi(Seri-Paralel). Berbagai jenis rangkaian listrik dibuat berdasarkan kebutuhan 
+										pengguna(konsumen) atau produsen</p>
+    								
+										<h3><b>Rangkaian Seri</b></h3>
+										<p>Rangkaian seri adalah jenis rangkaian listrik yang disusun secara sejajar dimana komponen - komponen 
+										dipasang secara berurutan dalam satu jalur.</p>
+									<div class="centerText">
+										<img src="img/materi4-b-gambar%20seri.png" alt="" height="62" width="250">
+									</div>	
+										<p>Arus yang mengalir pada rangkaian seri adalah sama, sedangkan tegangan yang mengalir pada setiap beban 
+										berbeda sesuai dengan besar hambatan pada komponen.</p>
+										<p>Arus pada rangkaian Seri sama (I1 = I2 = I3) </p>
+										<p>sedangkan tegangan tegangan (V) adalah <br>
+										Vsumber = Vpada beban A  + V pada beban B ...</p>
+										<p>Karena arus I yang melalui lampu-lampu tersebut sama besar, maka VA = I.RA dan VB = I.RB. Oleh karena itu,</p>
+										<p>Vsumber = I.RA + I.RB atau Vsumber = I(RA + RB).</p>
+										<p>Dari segi instalasi rangkaian seri lebih sederhana dan mudah disusun dibandingkan dengan jenis rangkaian 
+										paralel.</p>
+										<p>Kekurangan dari rangkaian seri yaitu apabila terjadi kerusakan pada satu komponen atau salah satu komponen
+										dilepas maka akan berpengaruh pada komponen yang lainnya. Ini terjadi karena semua komponen di pasang dalam satu
+										saluran.</p>
+										<p>Rumus matematis rangkaian Seri adalah:</p>
+									<div align="center" style="font-size: 18px;">
+										<p><b>Rs = R1 + R2 + R3 + Rn....</b></p>
+									</div>	
+										<p>Perhatiakan gambar di bawah ini!</p>
+										<img src="img/materi4-c-gambar%20seri.png" alt="" style="width: 100%;">
+										<p>Hambatan total dari rangkaian di atas adalah: Rs = R1 + R2 </p>
+										<p>Contoh:</p>
+										<p>Hitunglah nilai resistor pengganti pada rangkaian di bawah ini!</p>
+										<img src="img/materi4-d-gambar%20seri.png" alt="" style="width: 100%;">
+										<p>Penyelesaian:</p>
+										<p>Rs = R1 + R2 + R3 + R4 </p>
+										<p>Rs = 12 + 8 + 10 + 6 = 36 &Omega;
+										
+										<h3><b>Rangkaian Paralel</b></h3>
+										<p>Rangkaian paralel merupakan jenis rangkaian listrik yang disusun dengan tidak sebaris.</p>
+										<img src="img/materi4-e-gambar%20paralel.png" alt="" style="width: 100%;">
+										<p>Pada rangkaian ini, input untuk setiap komponen adalah sumber yang sama.</p>
+										<p>Dari segi instalasi rangkaian paralel lebih rumit bila dibandingkan dengan rangkaian seri.</p>
+										<p>Kelebihan dari rangkaian paralel adalah apabila salah satu komponen mengalami kerusakan atau dilepas tidak akan berpengaruh
+										pada komponen yang lain dan komponen lain masih berfungsi dengan baik.</p>
+										<p>Rumus matematis rangkaian paralel adalah:</p>
+										<img src="img/materi4-f-gambar%20paralel.png" alt="" style="width: 100%;">
+										<p>Perhatikan gambar dibawah ini!</p>
+										<img src="img/materi4-g-gambar%20paralel.png" alt="" style="width: 100%;">
+										<p>Hambatan total dari rangkaian di atas adalah:</p>
+									  <div align="center" style="font-size: 18px;">
+										    <p>1/Rp = 1/R1 + 1/R2</p>
+										</div>
+										<p>Contoh:</p>
+										<p>Hitunglah nilai resistor pengganti pada rangkaian di bawah ini!</p>
+										<img src="img/materi4-h-gambar%20paralel.png" alt="" style="width: 100%;">
+										<p>1/Rp = 1/R1 + 1/R2 + 1/R3</p>
+										<p>1/Rp = 1/8 + 1/6 + 1/4</p>
+										<p>1/Rp = 3/24 + 4/24 + 6/24</p>
+										<p>Rp = 24/18 = 1,85 &Omega;</p>
+										
+										<h3><b>Rangkaian Campuran (Seri-Paralel)</b></h3>
+										<p>Rangkaian seri-paralel adalah gabungan antara rangkaian seri dan rangkaian paralel.</p>
+										<img src="img/materi4-i-gambar%20Seri-paralel.png" alt="" style="width: 100%;">
+										<div align="center" >
+												 <p>Gambar. Rangkaian Seri-Paralel</p>
+										</div>
+										<p>Untuk mencari nilai hambatan (R) total pada rangkaian dapat mengkombinasikan rumus rangkaian seri dan paralel.</p>
+										<p><b>Langkah penyederhanaan rangkaian seri-paralel</b></p>
+										<p>Langkah pertama untuk menyederhanakan hambatan (R) pada rangkaian seri-paralel adalah dengan menentukan Rtotal dari
+										rangkaian paralel dan rangkaian seri jadikan dalam satu bentuk (dibuat rangkaian seri agar lebih mudah).</p>
+										<p>Berdasarkan rangkaian diatas, penyederhanaan yang dilakuakan adalah</p>
+										<p><b>1. R1 dan R5 (rangkaian seri)</b></p>
+										<p>Rs1 = R1 + R5</p>
+										<img src="img/materi4-j-gambar%20Seri-paralel.png" alt="" style="width: 100%;">
+										<p><b>2. Rs, R2, R3 (Rangkaian Paralel)</b></p>
+										<p>1/Rp1 = 1/Rs1 + 1/R2 + 1/R3</p>
+										<img src="img/materi4-k-gambar%20Seri-paralel.png" alt="" style="width: 100%;">
+										<p><b>3. Rp1 dengan R4(Rangkaian 4 Seri)</b></p>
+										<p>Rs2 = Rp 1 + R4</p>
+										<img src="img/materi4-l-gambar%20Seri-paralel.png" alt="" style="width: 100%;">
+										<p><b>4. Sehingga nilai R total adalah Rs2</b></p>
+										<img src="img/materi4-m-gambar%20Seri-paralel.png" alt="" style="width: 100%;">
+										
+										<h3>Contoh Soal</h3>
+										<p>Hitunglah nilai arus yang mengalir pada rangkaian!</p>
+										<img src="img/materi4-n-gambar%20SOAL.png" alt="" style="width: 100%;">
+										<p>Langkah pertama yaitu menentukan nilai hambatan pengganti atau hambatan total.</p>
+										<p>Mulailah pada rangkaian paralel dari cabang terkecil.</p>
+										<p>1/Rp= 1/R1 + 1/R2 + 1/R3</p> 
+										<p>1/Rp= 1/4 + 1/6 + 1/8</p>
+										<p>1/Rp= 6/24 + 4/24 + 3/24</p>
+										<p>Rp=24/13 = 1,85 &Omega;</p>
+										<p>Cabang Selanjutnya</p>
+										<p>Rs= Rp + R4</p>
+										<p>Rs= 1,85 + 5 = 6,85 &Omega;</p>
+										<p>Menghitung Arus menggunakan Hukum Ohm</p>
+										<p>I = V/R</p>
+										<p>I = 25/6,85= 3,65 A</p>
+										
+										
+                </div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#Materi-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>
+						
+						<div  id="silabus-page" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">SILABUS</h1>
+                </div>
+                <div data-role="content" align="justify" style="font-size: 16px;">
+                    <!-- Isi konten di sini -->
+								SILABUS
+								<img src="img/SILABUS.png" style="width:100%">
+						</div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>	
+						
+						
+						<div  id="help-page" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">BANTUAN</h1>
+										
+                </div>
+                <div data-role="content" align="center" style="font-size: 16px;">
+                    <!-- Isi konten di sini -->
+										<p>Menu bantuan ini adalah menu yang berisikan informasi untuk mengetahui fungsi tiap tombol pada media pembelajaran ini.</p>
+										<p>Berikut adalah penjelasannya:</p>
+										
+								<img src="img/help/home.PNG" width="74" height="49">
+								<p>Tombol ini terletak di pojok kiri atas, berfungsi sebagai tombol untuk kembali ke menu utama.</p>
+								<img src="img/help/back.PNG" width="66" height="32">
+								<p>tombol ini terletak di bagaian pojok kiri bawah, berfungsi untuk kembali ke menu sebelumnya.</p>
+								<img src="img/help/materi1.PNG" style="width:100%">
+								<p>Tombol ini merupakan tombol materi 1 untuk menuju ke materi pertama yang berisikan tentang dasar-dasar kelistrikan dari ataom, arus, tegangan, dan hambatan.</p>
+								<img src="img/help/materi2.PNG" style="width:100%">
+								<p>Tombol ini merupakan tombol materi 2 untuk menuju ke isi materi dua yang berisikan tentang hukum Ohm </p>
+								<img src="img/help/materi3.PNG" style="width:100%">
+								<p>Tombol ini merupakan tombol materi 3 untuk menuju ke isi materi tiga yang berisikan tentang hukum Kirchoff 1 dan hukum kirchoff 2</p>
+								<img src="img/help/materi4.PNG" style="width:100%">
+								<p>Tombol ini merupakan tombol materi 3 untuk menuju ke isi materi tiga yang berisikan tentang analisis rangakaian dasar kelistrikan (seri, paralel, dan kombinasi)</p>
+								
+								
+								
+								
+						</div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>			
+									
+										
+										
+						<div  id="evaluasi-page" data-role="page" style="background-image: url('img/Icon%20Materi/background%20soal.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+								<a href="#home-page"  data-role="button" data-icon="ms-home-bt" data-inline="true" >Home</a>
+                    <h1 style="font-size: 24px;">EVALUASI</h1>
+                </div>
+                <div data-role="content" align="justify" style="font-size: 16px;">
+								<!-- Isi konten di sini -->
+								  <div id="divMulai" style="display:initial">
+									  <div style="background-color: rgba(255,255,255,0.7);padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;">
+										<p>Halaman Evaluasi terdiri dari 20 soal berbentuk pilihan ganda. Setiap jawaban benar bernilai 5 poin sehingga apabila semua jawaban benar akan mendapatkan
+										nilai 100 poin. Silakan klik tombol mulai dibawah untuk mengerjakan soal.</p>
+										</div>
+										<a data-role="button" onclick="mulaiSoal()" style="text-align: center;">Mulai</a>
+									</div>
+								  <div id="divSoal" style="display:none">
+										 <div style="background-color: rgba(255,255,255,0.7);padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;">
+										 			<p id="textSoal" ></p>
+										 </div>
+										 <a data-role="button" onclick="cekJawaban('a')" style="text-align: left;" id="opsiA">dfg</a>
+										 <a data-role="button" onclick="cekJawaban('b')" style="text-align: left;" id="opsiB">hrtrh</a>
+										 <a data-role="button" onclick="cekJawaban('c')" style="text-align: left;" id="opsiC">rhtr</a>
+										 <a data-role="button" onclick="cekJawaban('d')" style="text-align: left;" id="opsiD">tht</a>
+										 <a data-role="button" onclick="cekJawaban('e')" style="text-align: left;" id="opsiE">rh</a>
+									</div>	 
+								  <div id="divSekor" style="display:none;" align="center">
+											<div class="ui-corner-all custom-corner" style="width:200px"">
+											  <div data-role="header">
+												  <h3>NILAI</h3>
+												</div>
+												<div data-role="content" style="background-color: rgba(255,255,255,0.7);">
+												   <p id="sekor" style="text-align: center;font-size: 50px;">xxxxxxxxxxx</p>
+												</div>
+											</div>
+											<br>
+											<br>
+												<div style="background-color: rgba(255,255,255,0.7);padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;">
+														 <p id="keterangan" style="text-align: center;font-size: 18px;">xxxxxxxxxxx</p>
+												</div>
+									</div>
+								</div>
+								<div data-role="footer" data-id="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+                    <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                </div>
+            </div>
+						
+            <div  id="about-page" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                    <h1>About App</h1>
+                </div>
+                <div data-role="content" align="center" style="font-size: 16px;">
+                    <!-- Isi konten di sini --> 
+										<p>Kami mengucapkan terimakasih kepada semua pihak yang telah membantu dan mendukung pengembangan media pembelajaran ini. Semoga media ini bermanfaat bagi
+										pendidikan di sekolah baik bagi siswa, guru, lembaga pendidikan maupun untuk tujuan pengembangan.</p>
+										<p>Kami menyadari bahwa media ini masih jauh dari kesempurnaan sehingga kami membutuhkan kritik dan masukannya untuk pengembangan media selanjutnya. </p>
+										
+										<p><b>Tim Pengembang</b></p>
+										<img src="img/about_desna.jpg" width="160" height="180">
+										<p><b>Putu Desna Andy Pratama</b></p>
+										<p>Pendidikan Teknik Otomotif</p>
+										<p>Universitas Negeri Yogyakarta</p>
+										
+										<p><b>Dosen Pembimbing</b></p>
+										<img src="img/about_martubi.jpg" width="160" height="213">
+										<p><b>H. Martubi M.Pd M.T</b></p>
+										<p>Pendidikan Teknik Otomotif</p>
+										<p>Universitas Negeri Yogyakarta</p>
+										
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="libs/fastclick.min.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>
+
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+				
+				<script type="text/javascript">
+				  var nomorSoal = 0;
+					var sekor = 0;
+					var pengali = 5;
+					var soal = [
+									 	   "Pada konsep listrik kata  \"Atom \"  berasal dari Negara?",
+											 "Atom memiliki inti, muatan apa saja yang terdapat pada inti atom?",
+											 "Untuk persamaan coulum per detik adalah?",
+											 "Kekuatan yang menggerakkan elektron dalam suatu rangkaian disebut?",
+											 "Disebut apakah simbol dibawah ini? <img src=\"img/soal/simbol.png\" style=\"width:100%\"/>",
+											 "Besaran arus listrik yang mengalir pada sebuah penampang adalah?",
+											 "Hukum ohm dinyatakan dengan hubungan arus, tegangan dan hambatan adalah?",
+											 "Bila arus(I) yang mengalir 2 ampere dan tahanan (R) yang terjadi 4 ohm maka tegangannya(V) adalah?",
+											 "Berapa kuat arus yang mengalir melalui sebuah resistor 60 &Omega; sewaktu tegangan 30V diberikan pada resistor tersebut?",
+											 "Suatu kabel penghantar dengan hambatan total sebesar 10 &Omega; . Kawat tersebut membawa arus sebesar 50mA. Hitunglah perbedaan potensial antara kedua ujung kawat tersebut?",
+											 "Rumus persamaan dari gambar di bawah ini adalah? <img src=\"img/soal/soal.png\" style=\"width:100%\"/>",
+											 "Jika percabangan berarus listrik masuk yaitu I<sub>1</sub>= 10 Ampere, I<sub>2</sub>=5 Ampere. Sedangkan percabangan berarus listrik keluar yaitu I<sub>3</sub>= 5 Ampere, I<sub>4</sub>= 7 Ampere. Tentukan besar dan arah arus I<sub>5</sub>! <img src=\"img/soal/soal.png\" style=\"width:100%\"/>",
+											 "Jika nilai R1= 20 Ohm, R2= 20 Ohm, R3= 10 Ohm  dan V= 100 Volt. Maka besar arus totalnya adalah? <img src=\"img/soal/soal13.png\" Style=\"width:100%\"/>",
+											 "Tiga buah bola lampu, resistansi masing-masing bola lampu 120 Ohm, 60 Ohm dan 36 Ohm. Lampu-lampu tersebut dihubungkan secara sejajar pada tegangan 220 Volt. Berapa total arus pada lampu?",
+											 "Rumus matematis yang menunjukkan pengertian dari hukum Kirchoff 2 adalah?",
+											 "Diketahui E= 10 Volt, R1= 2 Ohm, R3= 3 Ohm, Arus yang mengalir pada rangkaian di atas adalah?<img src=\"img/soal/soal16.png\" Style=\"width:100%\"/>",
+											 "<img src=\"img/soal/soal17.png\" Style=\"width:100%\"/> Arus yang mengalir pada Rangkaian di atas adalah",
+											 "Arus yang mengalir pada R3 adalah <img src=\"img/soal/soal18.png\" Style=\"width:100%\"/>",
+											 "Nilai resistor pengganti yang dirangkai seperti gambar adalah? <img src=\"img/soal/soal19.png\" Style=\"width:100%\"/>",
+											 "Nilai resistor yang dirangkai seperti ini adalah? <img src=\"img/soal/soal20.png\" Style=\"width:100%\"/>",
+											  
+										 ];
+					var opsiA = [									 	   
+											 "Inggris",
+											 "Proton dan Elektron",
+											 "1 watt",
+											 "Tegangan",
+											 "Hambatan",
+											 "Ohm",
+											 "I = V x R",
+											 "8 Ampere",
+											 "3 Ampere",
+											 "5 Volt",
+											 "I<sub>1</sub> x I<sub>2</sub> x I<sub>3</sub> = I<sub>4</sub> x I<sub>5</sub>",
+											 "3 ampere, masuk",
+											 "25 ampere",
+											 "1,02 ampere",
+											 "&Sigma;E x &Sigma;IR = 0",
+											 "2 A",
+											 "2 A",
+											 "-5,68 A",
+											 "10 ohm",
+											 "10 ohm",
+										 ];
+					var opsiB = [									 	   
+											 "Amerika",
+											 "Electron dan Nucleus",
+											 "1 Ampere",
+											 "Arus",
+											 "Ground",
+											 "Volt",
+											 "R= I x V",
+											 "6 Ohm",
+											 "0,5 Ampere",
+											 "50 Volt",
+											 "I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>=I<sub>4</sub>+I<sub>5</sub>",
+											 "2 ampere, keluar",
+											 "30 ampere",
+											 "2,35 ampere",
+											 "&Sigma;E - &Sigma;IR = 0",
+											 "3 A",
+											 "3 A",
+											 "-2,29 A",
+											 "20 ohm",
+											 "20 ohm",
+										 ];
+					var opsiC = [									 	   
+											 "Yunani",
+											 "Proton dan Neutron",
+											 "1 Volt",
+											 "Induksi",
+											 "Frekuensi",
+											 "Watt",
+											 "V= I x R",
+											 "8 Volt",
+											 "0,2 Ampere",
+											 "500 Volt",
+											 "(I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>)-(I<sub>4</sub>+I<sub>5</sub>)",
+											 "3 ampere, keluar",
+											 "35 ampere",
+											 "5,01 ampere",
+											 "&Sigma;IR - &Sigma;E = 0",
+											 "4 A",
+											 "4 A",
+											 "-2,34 A",
+											 "30 ohm",
+											 "30 ohm",
+										 ];
+					var opsiD = [									 	   
+											 "Indonesia",
+											 "Proton dan Nucleus",
+											 "1 Ohm",
+											 "Resistor",
+											 "Voltase",
+											 "Ampere",
+											 "V= I/R",
+											 "6 Volt",
+											 "2 Ampere",
+											 "0,5 Volt",
+											 "(I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>)x(I<sub>4</sub>+I<sub>5</sub>)",
+											 "15 ampere, masuk",
+											 "12 ampere",
+											 "2,03 ampere",
+											 "&Sigma;E + &Sigma;IR = 0",
+											 "5 A",
+											 "5 A",
+											 "-0,56 A",
+											 "25 ohm",
+											 "25 ohm",
+										 ];
+					var opsiE = [									 	   
+											 "Rusia",
+											 "Neutron dan Nucleus",
+											 "1 Coloum",
+											 "Neutron",
+											 "Arus",
+											 "Coloum",
+											 "V= R/I",
+											 "2 Ampere",
+											 "1,5 Ampere",
+											 "0,05 Volt",
+											 "I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub> = I<sub>4</sub> x I<sub>5</sub>)",
+											 "12 ampere, keluar",
+											 "20 ampere",
+											 "1,01 ampere",
+											 "&Sigma;E : &Sigma;IR = 0",
+											 "6 A",
+											 "6 A",
+											 "-3,15",
+											 "45 ohm",
+											 "45 ohm",
+										 ];
+					var kunciJawaban = [        									 	   
+        	 										 "c",
+					 										 "c",
+					 										 "b",
+					 										 "a",
+						 									 "a",
+							 								 "d",
+						 									 "c",
+							 								 "c",
+						 									 "b",
+						  								 "d",
+				  										 "b",
+				  										 "c",
+			    										 "e",
+				  										 "a",
+				  										 "d",
+				  										 "a",
+				  										 "c",
+				  										 "b",
+				  										 "c",
+				  										 "a"
+															 
+															 
+        										 ];
+					var jumlahSoal = soal.length;
+					function resetSoal(){
+					  nomorSoal = 0;
+						sekor = 0;
+					  document.getElementById("divMulai").style.display = "initial";
+					  document.getElementById("divSoal").style.display = "none";
+					  document.getElementById("divSekor").style.display = "none";
+					}
+					function mulaiSoal(){
+					    document.getElementById("divMulai").style.display = "none";
+					    document.getElementById("divSoal").style.display = "initial";
+							tampilkanSoal();
+					}
+					function tampilkanSoal(){
+					  document.getElementById("textSoal").innerHTML = nomorSoal+1 +". "+soal[nomorSoal];
+					  document.getElementById("opsiA").innerHTML = "a. "+opsiA[nomorSoal];
+					  document.getElementById("opsiB").innerHTML = "b. "+opsiB[nomorSoal];
+					  document.getElementById("opsiC").innerHTML = "c. "+opsiC[nomorSoal];
+					  document.getElementById("opsiD").innerHTML = "d. "+opsiD[nomorSoal];
+					  document.getElementById("opsiE").innerHTML = "e. "+opsiE[nomorSoal];
+					  document.getElementById("opsiA").style.paddingLeft = "10px";
+					  document.getElementById("opsiA").style.paddingTop = "10px";
+					  document.getElementById("opsiA").style.paddingBottom = "10px";
+					  document.getElementById("opsiB").style.paddingLeft = "10px";
+					  document.getElementById("opsiB").style.paddingTop = "10px";
+					  document.getElementById("opsiB").style.paddingBottom = "10px";
+					  document.getElementById("opsiC").style.paddingLeft = "10px";
+					  document.getElementById("opsiC").style.paddingTop = "10px";
+					  document.getElementById("opsiC").style.paddingBottom = "10px";
+					  document.getElementById("opsiD").style.paddingLeft = "10px";
+					  document.getElementById("opsiD").style.paddingTop = "10px";
+					  document.getElementById("opsiD").style.paddingBottom = "10px";
+					  document.getElementById("opsiE").style.paddingLeft = "10px";
+					  document.getElementById("opsiE").style.paddingTop = "10px";
+					  document.getElementById("opsiE").style.paddingBottom = "10px";
+					  document.getElementById("divSoal").style.display = "initial";
+					}
+					function cekJawaban(value){
+						if(value == kunciJawaban[nomorSoal]){
+						  sekor++;
+						}
+						nomorSoal++;
+						if(nomorSoal<jumlahSoal){
+						  tampilkanSoal();
+						}else{
+					    document.getElementById("divSoal").style.display = "none";
+					    document.getElementById("divSekor").style.display = "initial";
+					    document.getElementById("sekor").innerHTML = sekor*5;
+							var keterangan;
+							if(sekor>=15){
+							  keterangan = "Selamat anda berhasil mengaerjakan dengan baik";
+							}else{
+							  keterangan = "Maaf anda belum lulus, silakan pelajari lagi pada menu materi";
+							}
+					    document.getElementById("keterangan").innerHTML = keterangan;
+						}
+					}
+				  function hitungI(){
+					  nilaiV = document.getElementById("nilaiV").value;
+					  nilaiI = document.getElementById("nilaiI").value;
+					  nilaiR = document.getElementById("nilaiR").value;
+					  document.getElementById("btnV").innerHTML = "V = "+nilaiV+"V";
+						nilaiI = nilaiV/nilaiR;
+						nilaiI = nilaiI.toFixed(2);
+						document.getElementById("nilaiI").value = nilaiI;
+					  document.getElementById("btnI").innerHTML = "I = "+nilaiI+"A";
+					}
+				  function hitungR(){
+					  nilaiV = document.getElementById("nilaiV").value;
+					  nilaiI = document.getElementById("nilaiI").value;
+					  nilaiR = document.getElementById("nilaiR").value;
+					  document.getElementById("btnI").innerHTML = "I = "+nilaiI+"A";
+						nilaiR = nilaiV/nilaiI;
+						nilaiR = nilaiR.toFixed(2);
+						document.getElementById("nilaiR").value = nilaiR;
+					  document.getElementById("btnR").innerHTML = "R = "+nilaiR+"&Omega;";
+					}
+				  function hitungV(){
+					  nilaiV = document.getElementById("nilaiV").value;
+					  nilaiI = document.getElementById("nilaiI").value;
+					  nilaiR = document.getElementById("nilaiR").value;
+					  document.getElementById("btnR").innerHTML = "R = "+nilaiR+"&Omega;";
+						nilaiV = nilaiI*nilaiR;
+						nilaiV = nilaiV.toFixed(2);
+						document.getElementById("nilaiV").value = nilaiV;
+					  document.getElementById("btnV").innerHTML = "V = "+nilaiV+"V";
+					}
+				</script>
+    </body>
+</html>
