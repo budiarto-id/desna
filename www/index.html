@@ -13,16 +13,20 @@
     <body>
 		
         <div id="app">
+						 <div id="dudu-pembuka" data-role="page" style="background-image:url('img/Icon%20Materi/DEPAN.png'); background-repeat:no-repeat;background-size:100% 100%">
+      				<script type="text/JavaScript">
+      					  setTimeout("location.href = '#Welcome-page';",5000);
+      				</script>
+      				</div><!-- end Page-->
 						 <div id="Welcome-page" data-role="page" style="background-image:  url('img/Icon%20Materi/background%20project%20tanpa%20background.png'), url('img/Icon%20Materi/steelbackground3.jpg');background-position: center center, top left;background-size: 100%,100% 100%;background-repeat: no-repeat;"> 
 						    <a href="#home-page" data-theme="d"  data-role="button" data-inline="true" style="margin-top: 100%;margin-left: 30%;">Masuk</a>
 						 </div>
 				    
             <div id="home-page" data-role="page">
-						<img src="img/Icon%20Materi/background%20menu.png"  style="width:100%" >
+						<img src="img/Icon%20Materi/background%20project.png"  style="width:100%" >
                 <div data-role="content" >
 								
-								
-                    
+								                 
 										
                     <div id="menu">
 												 <ul data-role="listview">
@@ -934,7 +938,7 @@
 								<!-- Isi konten di sini -->
 								  <div id="divMulai" style="display:initial">
 									  <div style="background-color: rgba(255,255,255,0.7);padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;">
-										<p><b>Halaman Evaluasi terdiri dari 30 soal berbentuk pilihan ganda. Setiap jawaban benar bernilai 5 poin sehingga apabila semua jawaban benar akan mendapatkan
+										<p><b>Halaman Evaluasi terdiri dari 30 soal berbentuk pilihan ganda. Setiap jawaban benar bernilai 10 poin dibagi 3 sehingga apabila semua jawaban benar akan mendapatkan
 										nilai 100 poin. Tidak terdapat tombol kembali pada soal. Diharapkan untuk menjawab dengan hati-hati dan benar. Silakan klik tombol <i>"Mulai"</i> dibawah untuk mengerjakan soal.</b></p>
 										</div>
 										<a data-role="button" onclick="mulaiSoal()" style="text-align: center;">Mulai</a>
@@ -1439,9 +1443,9 @@
 						}else{
 					    document.getElementById("divSoal").style.display = "none";
 					    document.getElementById("divSekor").style.display = "initial";
-					    document.getElementById("sekor").innerHTML = sekor/3;
+					    document.getElementById("sekor").innerHTML = (sekor/3).toFixed(2);
 							var keterangan;
-							if(sekor>=15){
+							if(sekor>=210){
 							  keterangan = "Selamat anda berhasil mengerjakan dengan baik";
 					      document.getElementById("btn-pembahasan").style.visibility = "visible";
 							}else{
