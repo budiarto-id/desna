@@ -51,7 +51,6 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
-		<plugin name="com.dawsonloudon.videoplayer" spec="1.0.0" source="pgb" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
